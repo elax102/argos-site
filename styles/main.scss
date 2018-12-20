@@ -51,13 +51,151 @@ section{
 	flex-direction: column;
 }
 
-.vignette{
+#vignette{
 	position: fixed;
 	width: 100%;
 	height: 100vh;
 	top: 0;
 	left: 0;
 	right: 0;
-	box-shadow: inset 0 0 100px black;
+	// box-shadow: inset 0 0 100px black;
+	transition: box-shadow 1s;
 	pointer-events: none;
 }
+
+.pulse{
+	&1{
+		// animation-name: pulse1;
+		// animation-duration: 3s;
+		// animation-iteration-count: infinite;
+		box-shadow: inset 0 0 100px black;
+	}
+
+	&2{
+		animation-name: pulse2;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+	}
+
+	&3{
+		animation-name: pulse2;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
+}
+
+@keyframes pulse1 {
+	0%{
+		box-shadow: inset 0 0 100px black;
+	}
+	50%{
+		box-shadow: inset 0 0 200px black;
+	}
+	100%{
+		box-shadow: inset 0 0 100px black;
+	}
+}
+
+@keyframes pulse2 {
+	0% {
+		box-shadow: inset 0 0 100px black;
+	}
+
+	50% {
+		box-shadow: inset 0 0 200px black;
+	}
+
+	100% {
+		box-shadow: inset 0 0 100px black;
+	}
+}
+
+@keyframes pulse3 {
+	0% {
+		box-shadow: inset 0 0 100px black;
+	}
+
+	50% {
+		box-shadow: inset 0 0 2000px black;
+	}
+
+	100% {
+		box-shadow: inset 0 0 100px black;
+	}
+}
+
+// @keyframes pulse2 {
+// 	0% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+
+// 	25% {
+// 		box-shadow: inset 0 0 200px black;
+// 	}
+
+// 	50% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+
+// 	100% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+// }
+
+// @keyframes pulse3 {
+// 	0% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+
+// 	25% {
+// 		box-shadow: inset 0 0 1000px black;
+// 	}
+
+// 	50% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+
+// 	100% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+// }
+
+// @keyframes pulse2 {
+// 	0% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+// 	25%{
+// 		box-shadow: inset 0 0 300px black;
+// 	}
+// 	50% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+// 	75% {
+// 		box-shadow: inset 0 0 200px black;
+// 	}
+// 	100% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+// }
+
+// @keyframes pulse3 {
+// 	0% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+
+// 	25% {
+// 		box-shadow: inset 0 0 300px black;
+// 	}
+
+// 	50% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+
+// 	75% {
+// 		box-shadow: inset 0 0 200px black;
+// 	}
+
+// 	100% {
+// 		box-shadow: inset 0 0 100px black;
+// 	}
+// }
